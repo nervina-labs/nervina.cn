@@ -19,3 +19,13 @@ h1 {
   width: 100%;
   text-align: center;
 }
+
+h4 {
+  text-align: center;
+}
+
+.production-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
