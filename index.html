@@ -75,37 +75,43 @@
   <div class="productions">
     <div class="production-item">
       <p />
-      <h3 id="production1-title"></h3>
+      <h3>Neuron</h3>
       <span id="production1-description"></span>
       <div class="buttons">
-        <div class="button">GitHub</div>
+        <div class="button" onclick="gotoGithub('neuron')">GitHub</div>
       </div>
       
     </div>
     <div class="production-item">
       <p />
-      <h3 id="production2-title"></h3>
+      <h3>CKB Explorer</h3>
       <span id="production2-description"></span>
       <div class="buttons">
-        <div class="button">CKB Explorer</div>
-        <div class="button">GitHub</div>
+        <div class="button" onclick="gotoWebsite('ckb-explorer')">CKB Explorer</div>
+        <div class="button" onclick="gotoGithub('ckb-explorer')">GitHub</div>
       </div>
     </div>
     <div class="production-item">
       <p />
-      <h3 id="production3-title"></h3>
+      <h3>Godwoken Explorer</h3>
       <span id="production3-description"></span>
       <div class="buttons">
-        <div class="button">Polyjuice Explorer</div>
-        <div class="button">GitHub</div>
+        <div class="button" onclick="gotoWebsite('godwoken-explorer')">Godwoken Explorer</div>
+        <div class="button" onclick="gotoGithub('godwoken-explorer')">GitHub</div>
       </div>
     </div>
     <div class="production-item">
       <p />
-      <h3 id="production4-title"></h3>
+      <h3>Nervos SDK</h3>
       <span id="production4-description"></span>
-      <div class="buttons">
-        <div class="button">GitHub</div>
+      <div class="buttons dropdown">
+        <div class="button dropdown-button">Nervos SDK</div>
+        <div class="dropdown-content">
+          <span onclick="gotoGithub('ckb-sdk-java')">Java</span>
+          <span onclick="gotoGithub('ckb-sdk-js')">JavaScript</span>
+          <span onclick="gotoGithub('ckb-sdk-go')">Go</span>
+          <span onclick="gotoGithub('ckb-sdk-ruby')">Ruby</span>
+        </div>
       </div>
     </div>
   </div>
@@ -118,70 +124,147 @@
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down"/>
+        <img class="arrow-down" id="job1-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job1-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job1-detail">
+      <h3 id="job1-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job1-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job1-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job1-detail')"/>
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job2-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job2-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job2-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job2-detail">
+      <h3 id="job2-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job2-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job2-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job2-detail')" />
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job3-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job3-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job3-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job3-detail">
+      <h3 id="job3-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job3-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job3-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job3-detail')" />
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job4-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job4-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job4-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job4-detail">
+      <h3 id="job4-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job4-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job4-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job4-detail')" />
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job5-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job5-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job5-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job5-detail">
+      <h3 id="job5-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job5-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job5-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job5-detail')" />
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job6-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job6-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job6-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job6-detail">
+      <h3 id="job6-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job6-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job6-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job6-detail')" />
+      </div>
+    </div>
     
     <div class="job-item">
       <div id="job7-title"></div>
       <div>
         <span class="tag">远程办公</span>
         <span class="tag">全职</span>
-        <img class="arrow-down" src="./assets/arrow_down.svg" alt="arrow down" />
+        <img class="arrow-down" id="job7-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" onclick="toggleJobDetail('job7-detail')"/>
       </div>
     </div>
     <span class="separate"></span>
+    <div class="job-detail close-detail" id="job7-detail">
+      <h3 id="job7-name"></h3>
+      <h4>岗位描述：</h4>
+      <span id="job7-responsibilities"></span>
+      <h4>岗位要求：</h4>
+      <span id="job7-qualifications"></span>
+      <div class="submit">
+        <div class="button">申请</div>
+        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job7-detail')" />
+      </div>
+    </div>
   </div>
   
   <div class="footer">
