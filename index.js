@@ -82,6 +82,19 @@ function gotoGithub(repository) {
   }
 }
 
+function gotoWebsite(website) {
+  switch (website) {
+    case "ckb-explorer":
+      window.open("https://explorer.nervos.org");
+      break;
+    case "godwoken-explorer":
+      window.open("https://explorer.nervos.org");
+      break;
+    default:
+      break;
+  }
+}
+
 function controlJobDetail(id, isShow) {
   const element = document.getElementById(id);
   const arrowImg = document.getElementById(`${id}-arrow`);
