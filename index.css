@@ -18,7 +18,7 @@ body {
 .header {
   height: 58px;
   width: 100%;
-  line-height: 64px;
+  line-height: 58px;
   background-color: #000000;
   display: flex;
   align-items: center;
@@ -37,6 +37,26 @@ body {
 
 .menus {
   justify-content: space-around;
+}
+
+.menus-image {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .menus {
+    display: none;
+  }
+
+  .menus-image {
+    display: block;
+    display: flex;
+  }
+
+  .menus-image img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .menus > span {
