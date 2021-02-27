@@ -21,8 +21,18 @@
       <span onclick="gotoElement('job')">加入我们</span>
     </div>
     <div class="menus-image">
-      <img src="./assets/menus.svg" alt="mobile menus"/>
+      <img src="./assets/menus.svg" alt="mobile menus" onclick="openHeaderPanel()"/>
     </div>
+  </div>
+  <div class="menus-panel close-element" id="menus-panel">
+    <div class="logo-panel">
+      <img class="mobile-logo" src="./assets/logo.svg" alt="nervina logo"/>
+      <img class="close" src="./assets/close.svg" alt="menus close" onclick="closeHeaderPanel()"/>
+    </div>
+    <div class="separate"></div>
+    <span onclick="gotoElementAndCloseHeaderPanel('solution')">解决方案</span>
+    <span onclick="gotoElementAndCloseHeaderPanel('production')">产品</span>
+    <span onclick="gotoElementAndCloseHeaderPanel('job')">加入我们</span>
   </div>
 
   <div class="subject"> 
@@ -131,7 +141,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job1-detail">
+    <div class="job-detail close-element" id="job1-detail">
       <h3 id="job1-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job1-responsibilities"></span>
@@ -152,7 +162,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job2-detail">
+    <div class="job-detail close-element" id="job2-detail">
       <h3 id="job2-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job2-responsibilities"></span>
@@ -173,7 +183,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job3-detail">
+    <div class="job-detail close-element" id="job3-detail">
       <h3 id="job3-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job3-responsibilities"></span>
@@ -194,7 +204,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job4-detail">
+    <div class="job-detail close-element" id="job4-detail">
       <h3 id="job4-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job4-responsibilities"></span>
@@ -215,7 +225,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job5-detail">
+    <div class="job-detail close-element" id="job5-detail">
       <h3 id="job5-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job5-responsibilities"></span>
@@ -236,7 +246,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job6-detail">
+    <div class="job-detail close-element" id="job6-detail">
       <h3 id="job6-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job6-responsibilities"></span>
@@ -257,7 +267,7 @@
       </div>
     </div>
     <span class="separate"></span>
-    <div class="job-detail close-detail" id="job7-detail">
+    <div class="job-detail close-element" id="job7-detail">
       <h3 id="job7-name"></h3>
       <h4>岗位描述：</h4>
       <span id="job7-responsibilities"></span>

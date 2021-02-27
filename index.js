@@ -51,7 +51,9 @@ const data = {
 
 function gotoElement(id) {
   const element = document.getElementById(id);
-  element.scrollIntoView({behavior: "smooth"});
+  if (element) {
+    element.scrollIntoView({behavior: "smooth"});
+  }
 }
 
 function gotoGithub(repository) {
@@ -95,18 +97,37 @@ function gotoWebsite(website) {
   }
 }
 
+function closeHeaderPanel() {
+  const element = document.getElementById("menus-panel");
+  if (element) {
+    element.classList.add("close-element");
+  }
+}
+
+function openHeaderPanel() {
+  const element = document.getElementById("menus-panel");
+  if (element) {
+    element.classList.remove("close-element");
+  }
+}
+
+function gotoElementAndCloseHeaderPanel(id) {
+  gotoElement(id);
+  closeHeaderPanel();
+}
+
 function controlJobDetail(id, isShow) {
   const element = document.getElementById(id);
   const arrowImg = document.getElementById(`${id}-arrow`);
   if (element && arrowImg) {
     if (isShow) {
-      element.classList.remove("close-detail");
-      element.classList.add("open-detail");
+      element.classList.remove("close-element");
+      element.classList.add("open-element");
       localStorage.setItem(id, "1");
       arrowImg.classList.add("job-arrow-rotate");
     } else {
-      element.classList.remove("open-detail");
-      element.classList.add("close-detail");
+      element.classList.remove("open-element");
+      element.classList.add("close-element");
       localStorage.setItem(id, "0");
       arrowImg.classList.remove("job-arrow-rotate");
     }
