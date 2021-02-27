@@ -87,6 +87,9 @@ function gotoGithub(repository) {
     case "ckb-sdk-ruby":
       window.open("https://github.com/nervosnetwork/ckb-sdk-ruby");
       break;
+    case "nervina.io":
+      window.open("https://github.com/nervina-labs/nervina.io");
+      break;
     default:
       break;
   }
@@ -99,6 +102,9 @@ function gotoWebsite(website) {
       break;
     case "godwoken-explorer":
       window.open("https://explorer.nervos.org");
+      break;
+    case "nervos.org":
+      window.open("https://nervos.org");
       break;
     default:
       break;
