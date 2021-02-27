@@ -56,6 +56,14 @@ function gotoElement(id) {
   }
 }
 
+function gotoTop() {
+  scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
 function gotoGithub(repository) {
   switch (repository) {
     case "neuron":
