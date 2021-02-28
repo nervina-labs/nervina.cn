@@ -11,7 +11,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lato, sans-serif, Montserrat, PingFang SC, -apple-system;
+  font-family: Source Han Sans, sans-serif, Montserrat, PingFang SC, -apple-system;
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  src: url("./fonts/source-han-sans.otf");
 }
 
 /* header */
