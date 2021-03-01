@@ -168,8 +168,7 @@ body {
 
 @media (max-width: 750px) {
   .subject-content {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin: 40px 0 80px 0;
   }
   .subject-image {
     margin-top: 40px;
@@ -504,7 +503,7 @@ body {
   .productions {
     flex-direction: column;
     align-items: center;
-    padding: 30px 32px;
+    padding: 30px 16px;
   }
 
   .productions .production-row {
@@ -557,6 +556,16 @@ body {
   padding: 0 25px;
 }
 
+@media (max-width: 750px) {
+  .production-item > h3 {
+    padding: 0 16px;
+  }
+
+  .production-item > span {
+    padding: 0 16px;
+  }
+}
+
 .production-item .buttons {
   flex: 1;
   width: 100%;
@@ -564,7 +573,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 16px;
-  padding: 0 25px;
 }
 
 @media (max-width: 1200px) {
@@ -575,6 +583,12 @@ body {
     align-items: flex-end;
     width: 100%;
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .production-item .buttons {
+    padding: 0 16px;
   }
 }
 
@@ -959,6 +973,6 @@ body {
   .solution1,
   .solution2,
   .solution3 {
-    padding: 0 32px;
+    padding: 0 16px;
   }
 }
