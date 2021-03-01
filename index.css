@@ -445,15 +445,16 @@ body {
   justify-content: space-around;
 }
 
+@media (min-width: 1920px) {
+  .productions {
+    padding: 160px 19%;
+  }
+}
+
 @media (max-width: 1200px) {
   .productions {
     flex-direction: column;
     padding: 50px;
-  }
-
-  .productions .production-row {
-    display: flex;
-    justify-content: space-around;
   }
 }
 
@@ -660,9 +661,15 @@ body {
 }
 
 .job .separate {
-  width: calc(100% - 320px);
+  width: 60%;
   height: 1px;
   background-color: #ffffff;
+}
+
+@media (max-width: 1920px) {
+  .job .separate {
+    width: calc(100% - 320px);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -886,6 +893,17 @@ body {
   .solution3,
   .job-item {
     padding: 0 160px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header,
+  .subject,
+  .solution1,
+  .solution2,
+  .solution3,
+  .job-item {
+    padding: 0 20%;
   }
 }
 
