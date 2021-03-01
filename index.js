@@ -64,6 +64,11 @@ function gotoTop() {
   });
 }
 
+function gotoTopAndCloseHeaderPanel() {
+  gotoTop();
+  closeHeaderPanel();
+}
+
 function gotoGithub(repository) {
   switch (repository) {
     case "neuron":
