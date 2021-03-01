@@ -724,7 +724,7 @@ body {
 
 @media (max-width: 750px) {
   .job .separate {
-    width: calc(100% - 64px);
+    width: calc(100% - 32px);
   }
 }
 
@@ -742,7 +742,7 @@ body {
 @media (max-width: 750px) {
   .job-item {
     min-height: 72px;
-    padding: 0 32px;
+    padding: 0 16px;
   }
 }
 
