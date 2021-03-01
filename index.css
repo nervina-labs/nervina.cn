@@ -266,6 +266,12 @@ body {
   flex: 1;
 }
 
+@media (max-width: 750px) {
+  .solution1-content {
+    margin: 24px 0 40px 0;
+  }
+}
+
 .solution1-content > h3 {
   font-size: 24px;
   font-weight: bold;
@@ -295,6 +301,10 @@ body {
 }
 
 @media (max-width: 750px) {
+  .solution1-image {
+    margin-left: 0px;
+  }
+
   .solution1-image > img {
     width: 100px;
     height: 100px;
@@ -313,7 +323,7 @@ body {
 
 @media (max-width: 750px) {
   .solution2 {
-    height: 327px;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -321,6 +331,12 @@ body {
 
 .solution2-content {
   flex: 1;
+}
+
+@media (max-width: 750px) {
+  .solution2-content {
+    margin: 24px 0 40px 0;
+  }
 }
 
 .solution2-image {
@@ -335,6 +351,10 @@ body {
 }
 
 @media (max-width: 750px) {
+  .solution2-image {
+    margin-right: 0px;
+  }
+
   .solution2-image > img {
     width: 100px;
     height: 100px;
@@ -370,9 +390,9 @@ body {
 
 @media (max-width: 750px) {
   .solution3 {
-    height: 380px;
+    height: auto;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -388,9 +408,11 @@ body {
 }
 
 @media (max-width: 750px) {
+  .solution3-content {
+    margin: 24px 0 40px 0;
+  }
   .solution3-content > h3 {
     font-size: 18px;
-    margin-top: -15px;
   }
 }
 
@@ -411,6 +433,10 @@ body {
 }
 
 @media (max-width: 750px) {
+  .solution3-image {
+    margin-left: 0px;
+  }
+
   .solution3-image > img {
     width: 100px;
     height: 100px;
