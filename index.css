@@ -599,7 +599,7 @@ body {
   text-align: center;
   border: 1px solid #9a5fe4;
   border-radius: 6px;
-  margin: 4px 0;
+  margin: 4px 25px;
   cursor: default;
 }
 
@@ -641,7 +641,7 @@ body {
   display: none;
   position: absolute;
   top: 35px;
-  left: 0px;
+  left: 25px;
   width: 210px;
   background-color: #ffffff;
   border: 1px solid #9a5fe4;
@@ -736,6 +736,7 @@ body {
   padding: 24px 0;
   width: 100%;
   padding: 0 calc(50% - 360px);
+  cursor: pointer;
 }
 
 @media (max-width: 750px) {
