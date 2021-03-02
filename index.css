@@ -606,17 +606,8 @@ body {
   cursor: default;
 }
 
-.production-item .disable-button {
-  background-color: #aaaaaa;
-  font-size: 14px;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  color: #000000;
-  border: 1px solid #aaaaaa;
-  border-radius: 6px;
-  margin: 4px 25px;
-  cursor: default;
+.production-item .disable {
+  opacity: 0.5;
 }
 
 @media (max-width: 1200px) {
@@ -639,6 +630,12 @@ body {
 .production-item .button:hover {
   background: linear-gradient(to right, #9a5fe4, #6c2af6);
   cursor: pointer;
+}
+
+.production-item .disable:hover {
+  background: transparent;
+  opacity: 0.5;
+  cursor: default;
 }
 
 .dropdown {
