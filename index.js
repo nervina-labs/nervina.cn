@@ -15,7 +15,7 @@ const data = {
   production1_description: "内置 Nervos CKB 全节点的资产客户端",
   production2_description: "Nervos CKB 区块数据浏览器",
   production3_description: "Nervos Layer 2 以太坊兼容层区块浏览器",
-  production4_description: "提供 Java/Go/Js 等 SDK 和技术开发文档",
+  production4_description: "提供 Java/Go/JavaScript/Ruby 等 SDK 和技术开发文档",
   job1_title: "市场总监",
   job1_name: "市场总监",
   job1_responsibilities:
@@ -27,7 +27,7 @@ const data = {
   job2_responsibilities:
     "1. 负责与多个垂直领域的互联网企业沟通，尝试将公司解决方案与对方业务进行落地结合\n 2. 负责进行商务洽谈、技术衔接并达成最终合作\n 3. 重要客户问题的收集、反馈并解决\n 4. 维护好重点客户的关系，保证客户的留存率\n 5. 发行新的 BD 对象，拓展业务边界",
   job2_qualifications:
-    "1. 本科及以上学历，拥有三年及以上互联网行业商务推广相关从业经验，具有一定的企业客户资源\n 2. 发行新的 BD 对象，拓展业务边界\n 3. 具有较强的独立思考能力，善于分析各方价值点，目标意识强",
+    "1. 本科及以上学历，拥有三年及以上互联网行业商务推广相关从业经验，具有一定的企业客户资源\n 2. 发展新的 BD 对象，拓展业务边界\n 3. 具有较强的独立思考能力，善于分析各方价值点，目标意识强",
   copyright: "Nervina Labs All Rights Reserved.",
 };
 
