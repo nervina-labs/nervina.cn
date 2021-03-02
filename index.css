@@ -201,15 +201,15 @@ body {
   font-weight: bold;
 }
 
-.subject-content > div:nth-child(2n + 1) {
+.subject-content #subject-title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
-.subject-content > div:nth-child(2n) {
+.subject-content #subject-description {
   font-size: 18px;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 /* solution */
@@ -277,16 +277,21 @@ body {
   text-align: left;
 }
 
+.solution1-content > div {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
 @media (max-width: 750px) {
   .solution1-content > h3 {
     font-size: 18px;
     text-align: center;
   }
-}
 
-.solution1-content > div {
-  font-size: 14px;
-  margin-top: 12px;
+  .solution1-content > div {
+    font-size: 14px;
+    margin-top: 12px;
+  }
 }
 
 .solution1-image {
@@ -368,16 +373,21 @@ body {
   text-align: left;
 }
 
+.solution2-content > div {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
 @media (max-width: 750px) {
   .solution2-content > h3 {
     font-size: 18px;
     text-align: center;
   }
-}
 
-.solution2-content > div {
-  font-size: 14px;
-  margin-top: 12px;
+  .solution2-content > div {
+    font-size: 14px;
+    margin-top: 12px;
+  }
 }
 
 .solution3 {
@@ -408,6 +418,11 @@ body {
   text-align: left;
 }
 
+.solution3-content > div {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
 @media (max-width: 750px) {
   .solution3-content {
     margin: 24px 0 40px 0;
@@ -416,11 +431,10 @@ body {
     font-size: 18px;
     text-align: center;
   }
-}
 
-.solution3-content > div {
-  font-size: 14px;
-  margin-top: 12px;
+  .solution3-content > div {
+    font-size: 14px;
+  }
 }
 
 .solution3-image {
