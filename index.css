@@ -673,6 +673,10 @@ body {
   text-align: center;
 }
 
+.dropdown-content > span:nth-child(4) {
+  border-radius: 0 0 6px 6px;
+}
+
 @media (max-width: 750px) {
   .dropdown-content {
     top: 32px;
