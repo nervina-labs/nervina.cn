@@ -121,6 +121,10 @@ function gotoWebsite(website) {
   }
 }
 
+function submitJob() {
+  window.open("mailto:join@nervina.io");
+}
+
 function closeHeaderPanel() {
   const element = document.getElementById("menus-panel");
   if (element) {

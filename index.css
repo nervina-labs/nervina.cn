@@ -850,6 +850,10 @@ body {
   }
 }
 
+.submit > a {
+  text-decoration: none;
+}
+
 .job-detail .button {
   width: 140px;
   height: 32px;
