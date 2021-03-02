@@ -778,13 +778,7 @@ body {
 .job-detail {
   width: 100%;
   background-color: #000000;
-  padding: 80px 30%;
-}
-
-@media (max-width: 750px) {
-  .job-detail {
-    padding: 40px 30%;
-  }
+  padding: 80px 28%;
 }
 
 @media (max-width: 1200px) {
