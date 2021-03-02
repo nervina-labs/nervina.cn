@@ -257,7 +257,7 @@ body {
 @media (max-width: 750px) {
   .solution1 {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -280,6 +280,7 @@ body {
 @media (max-width: 750px) {
   .solution1-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -324,7 +325,7 @@ body {
   .solution2 {
     height: auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -370,6 +371,7 @@ body {
 @media (max-width: 750px) {
   .solution2-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -392,7 +394,7 @@ body {
     height: auto;
     flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -412,6 +414,7 @@ body {
   }
   .solution3-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -603,6 +606,10 @@ body {
   cursor: default;
 }
 
+.production-item .disable {
+  opacity: 0.5;
+}
+
 @media (max-width: 1200px) {
   .production-item .button {
     flex: 1;
@@ -623,6 +630,12 @@ body {
 .production-item .button:hover {
   background: linear-gradient(to right, #9a5fe4, #6c2af6);
   cursor: pointer;
+}
+
+.production-item .disable:hover {
+  background: transparent;
+  opacity: 0.5;
+  cursor: default;
 }
 
 .dropdown {
@@ -778,13 +791,7 @@ body {
 .job-detail {
   width: 100%;
   background-color: #000000;
-  padding: 80px 30%;
-}
-
-@media (max-width: 750px) {
-  .job-detail {
-    padding: 40px 30%;
-  }
+  padding: 80px 28%;
 }
 
 @media (max-width: 1200px) {
@@ -841,6 +848,10 @@ body {
   .job-detail .submit {
     margin-top: 40px;
   }
+}
+
+.submit > a {
+  text-decoration: none;
 }
 
 .job-detail .button {
