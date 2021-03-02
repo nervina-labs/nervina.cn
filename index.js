@@ -76,6 +76,9 @@ function gotoGithub(repository) {
     case "neuron":
       window.open("https://github.com/nervosnetwork/neuron");
       break;
+    case "neuron-release":
+      window.open("https://github.com/nervosnetwork/neuron/releases");
+      break;
     case "ckb-explorer":
       window.open("https://github.com/nervosnetwork/ckb-explorer");
       break;

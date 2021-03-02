@@ -257,7 +257,7 @@ body {
 @media (max-width: 750px) {
   .solution1 {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -280,6 +280,7 @@ body {
 @media (max-width: 750px) {
   .solution1-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -324,7 +325,7 @@ body {
   .solution2 {
     height: auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -370,6 +371,7 @@ body {
 @media (max-width: 750px) {
   .solution2-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -392,7 +394,7 @@ body {
     height: auto;
     flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -412,6 +414,7 @@ body {
   }
   .solution3-content > h3 {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -598,6 +601,19 @@ body {
   line-height: 32px;
   text-align: center;
   border: 1px solid #9a5fe4;
+  border-radius: 6px;
+  margin: 4px 25px;
+  cursor: default;
+}
+
+.production-item .disable-button {
+  background-color: #aaaaaa;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #aaaaaa;
   border-radius: 6px;
   margin: 4px 25px;
   cursor: default;
