@@ -1,7 +1,8 @@
 const data = {
   title: "Nervina Labs",
   subject_title: "为信息互联网提供价值网络基础设施",
-  subject_description: "Nervina Labs 由 Nervos 核心应用开发者创立，致力于服务中国市场、推动区块链技术的落地并为传统互联网应用赋能。",
+  subject_description:
+    "Nervina Labs 是杭州节点互信科技有限公司旗下的区块链价值网络实验室，致力于服务中国市场、推动区块链技术的落地并为传统互联网应用赋能。",
   solution1_title: "可交换开放凭证",
   solution1_description:
     "EOP(Exchangeable Open Proof)为电子票证、商品预售、粉丝经济、版权分发、艺术品拍卖等等行业提供支持全生命周期的区块链凭证标准。应用方在不修改原业务核心流程的前提下，基于区块链构建自己的应用生态。第三方开发者围绕着用户和 EOP 提供服务，为平台和用户带来价值。",
