@@ -52,56 +52,6 @@ function gotoTopAndCloseHeaderPanel() {
   closeHeaderPanel();
 }
 
-function gotoGithub(repository) {
-  switch (repository) {
-    case "neuron":
-      window.open("https://github.com/nervosnetwork/neuron");
-      break;
-    case "neuron-release":
-      window.open("https://github.com/nervosnetwork/neuron/releases");
-      break;
-    case "ckb-explorer":
-      window.open("https://github.com/nervosnetwork/ckb-explorer");
-      break;
-    case "godwoken-explorer":
-      window.open("https://github.com/nervina-labs/godwoken_explorer");
-      break;
-    case "ckb-sdk-java":
-      window.open("https://github.com/nervosnetwork/ckb-sdk-java");
-      break;
-    case "ckb-sdk-js":
-      window.open("https://github.com/nervosnetwork/ckb-sdk-js");
-      break;
-    case "ckb-sdk-go":
-      window.open("https://github.com/nervosnetwork/ckb-sdk-go");
-      break;
-    case "ckb-sdk-ruby":
-      window.open("https://github.com/nervosnetwork/ckb-sdk-ruby");
-      break;
-    case "nervina.io":
-      window.open("https://github.com/nervina-labs");
-      break;
-    default:
-      break;
-  }
-}
-
-function gotoWebsite(website) {
-  switch (website) {
-    case "ckb-explorer":
-      window.open("https://explorer.nervos.org");
-      break;
-    case "godwoken-explorer":
-      window.open("https://explorer.nervos.org");
-      break;
-    case "nervos.org":
-      window.open("https://nervos.org");
-      break;
-    default:
-      break;
-  }
-}
-
 function closeHeaderPanel() {
   const element = document.getElementById("menus-panel");
   if (element) {
