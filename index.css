@@ -635,7 +635,7 @@ a {
     margin: 0;
   }
 
-  .buttons div:nth-child(2) {
+  .buttons a:nth-child(2) {
     margin-left: 10px;
   }
 }
