@@ -121,7 +121,6 @@ function updateElementValue(key, value) {
     displayElementValue(keyToElementId(key), updateElementValue(key, data[key]));
   }
   if (location.hash) {
-    let elementHash = location.hash.replace("#", "");
-    gotoElement(elementHash);
+    gotoElement(location.hash.replace("#", ""));
   }
 })();
