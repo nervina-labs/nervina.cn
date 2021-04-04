@@ -120,4 +120,8 @@ function updateElementValue(key, value) {
   for (key in data) {
     displayElementValue(keyToElementId(key), updateElementValue(key, data[key]));
   }
+  if (location.hash) {
+    let elementHash = location.hash.replace("#", "");
+    gotoElement(elementHash);
+  }
 })();
