@@ -695,10 +695,10 @@ a {
   border-radius: 0 0 6px 6px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
   .dropdown-content {
-    top: 32px;
-    left: -10px;
+    top: 30px;
+    left: 0px;
     width: 100%;
   }
 }
