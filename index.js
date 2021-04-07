@@ -18,7 +18,7 @@ const data = {
   production3_description: "Nervos Layer 2 以太坊兼容层区块浏览器",
   production4_description: "提供 Java/Go/JavaScript/Ruby 等 SDK 和技术开发文档",
 
-  job1: "前端开发工程师",
+  job1_title: "前端开发工程师",
   job1_name: "前端开发工程师",
   job1_responsibilities:
     "1. 根据产品需求高质量完成 Web 应用以及 Electron 应用\n 2. 对具体产品进行性能优化\n 3. 维护团队的工具链\n 4. 对可复用组件进行抽象并独立维护",
@@ -26,21 +26,21 @@ const data = {
     "1. 具备良好的前端开发技能, 熟悉 HTML, CSS 和 TypeScript, 了解 Web 标准化(可访问性, 安全性)\n 2. 在泛前端范围有开发经验, 比如 Node 应用, Electron 应用\n 3. 熟练使用前端的各种工具, 比如各类脚手架, CSS 处理器, 模板引擎\n  4. Web 技术栈偏向 React 及 TypeScript",
   job1_preferred_qualifications: "1. 具有开源项目经验\n 2. 提供 GitHub 或技术博客\n 3. 有区块链产品开发经验",
 
-  job2: "市场运营总监",
+  job2_title: "市场运营总监",
   job2_name: "市场运营总监",
   job2_responsibilities:
     "1. 整理产品核心故事、设计品牌定位、制定市场策略\n 2. 结合产品业务进行策划，制定并执行新媒体平台传播\n 3. 关注策划方案的落地实施，定期复盘持续改进\n 4. 策划内容包括：文案策划、视频策划、专题策划、线下活动策划等",
   job2_qualifications:
     "1. 本科及以上学历，2-3年品牌策划工作经验\n 2. 理解能力强，能够快速掌握新的产品业务逻辑，具备较强的商业敏感度\n 3. 擅于沟通，具备良好的协作态度，具有对事不对人的情商理解力",
 
-  job3: "产品(运营)经理",
+  job3_title: "产品(运营)经理",
   job3_name: "产品(运营)经理",
   job3_responsibilities:
     "1. 结合公司业务发展阶段，确定产品功能的核心业务指标及定义\n 2. 收集整理用户反馈，持续跟踪和分析产品、运营效果，归纳总结产品问题，提出策略优化方向，并推进产研部门迭代\n 3. 负责建立业务分析框架体系与数据增长模型，监控/发现问题，产出数据分析报告，提出改进方案\n 4. 针对新功能产出产品使用说明文档，通过已有渠道推广用户使用\n 5. 分析指标数据和用户行为数据，找到问题点、增长点并协调相关部门推进执行",
   job3_qualifications:
     "1. 本科以上学历，有3年以上内容社区、社交平台相关产品设计、运营经验\n 2. 熟悉区块链领域者优先\n 3. 熟练使用至少一种数据统计分析工具；能独立完成分析并输出报告，善于从数据中挖掘用户需求，有实验和迭代意识\n 4. 具有较强的沟通、协作能力，自驱、担当力高，能推动相关部门配合行动",
 
-  job4: "商务拓展经理",
+  job4_title: "商务拓展经理",
   job4_name: "商务拓展经理",
   job4_responsibilities:
     "1. 独立完成商务谈判及售前交流，规划合作项目计划及进度执行，并完成从合作洽谈、条款协商及合同签订等商务事宜\n 2. 维护良好的客户关系，定期拜访客户，及时跟进项目进展，把握客户需求及项目情况\n 3. 跟踪行业最新动态，收集整理行业内客户及市场信息，发现机会并形成报告，为决策提供依据",
@@ -115,6 +115,19 @@ function closeJobDetail(id) {
   controlJobDetail(id, false);
 }
 
+function openJobDetail(id) {
+  if (id.startsWith("job")) {
+    controlJobDetail(`${id}-detail`, true);
+    setTimeout(() => {
+      window.scrollBy({
+        top: -58,
+        left: 0,
+        behavior: "smooth",
+      });
+    }, 20);
+  }
+}
+
 function displayElementValue(id, value) {
   let element = document.getElementById(id);
   if (element) {
@@ -138,6 +151,8 @@ function updateElementValue(key, value) {
     displayElementValue(keyToElementId(key), updateElementValue(key, data[key]));
   }
   if (location.hash) {
-    gotoElement(location.hash.replace("#", ""));
+    const id = location.hash.replace("#", "");
+    openJobDetail(id);
+    gotoElement(id);
   }
 })();
