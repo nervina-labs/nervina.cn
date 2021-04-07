@@ -115,16 +115,17 @@ function closeJobDetail(id) {
   controlJobDetail(id, false);
 }
 
+const HEADER_HEIGHT = -58;
 function openJobDetail(id) {
   if (id.startsWith("job")) {
     controlJobDetail(`${id}-detail`, true);
     setTimeout(() => {
       window.scrollBy({
-        top: -58,
+        top: HEADER_HEIGHT,
         left: 0,
         behavior: "smooth",
       });
-    }, 20);
+    }, 0);
   }
 }
 
