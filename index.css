@@ -961,10 +961,15 @@ a {
   }
 }
 
+.record {
+  margin-top: 16px;
+  font-size: 12px !important;
+}
+
 .copyright {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
-  margin-top: 32px;
+  margin-top: 12px;
 }
 
 @media (min-width: 1440px) {
