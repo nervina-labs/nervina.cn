@@ -12,11 +12,6 @@ const data = {
   solution3_title: "零摩擦无缝体验",
   solution3_description:
     "用户操作区块链账户无需支付手续费，也无需持有或购买代币。在提供区块链带来的开放性、可组合性和更多创新可能性的同时，不增加用户成本、不引入监管风险。",
-  production_category: "产品",
-  production1_description: "内置 Nervos CKB 全节点的资产客户端",
-  production2_description: "Nervos CKB 区块数据浏览器",
-  production3_description: "Nervos Layer 2 以太坊兼容层区块浏览器",
-  production4_description: "提供 Java/Go/JavaScript/Ruby 等 SDK 和技术开发文档",
 
   job1_title: "前端开发工程师",
   job1_name: "前端开发工程师",
