@@ -1,190 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta name="theme-color" content="#000000" />
+    <title>杭州节点互信科技有限公司</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <meta name="theme-color" content="#000000" />
-  <title>杭州节点互信科技有限公司</title>
-</head>
-
-<body>
-  <div class="header" id="header">
-    <div class="logo">
-      <img src="./assets/logo.svg" alt="nervina logo" onclick="gotoTop()"/>
-    </div>
-    <div class="menus">
-      <span onclick="gotoElement('solution')">解决方案</span>
-      <span onclick="gotoElement('job')">加入我们</span>
-    </div>
-    <div class="menus-image">
-      <img src="./assets/menus.svg" alt="mobile menus" onclick="openHeaderPanel()"/>
-    </div>
-  </div>
-  <div class="menus-panel close-element" id="menus-panel">
-    <div class="logo-panel">
-      <img class="mobile-logo" src="./assets/logo.svg" alt="nervina logo" onclick="gotoTopAndCloseHeaderPanel()"/>
-      <img class="close" src="./assets/close.svg" alt="menus close" onclick="closeHeaderPanel()"/>
-    </div>
-    <div class="separate"></div>
-    <span onclick="gotoElementAndCloseHeaderPanel('solution')">解决方案</span>
-    <span onclick="gotoElementAndCloseHeaderPanel('job')">加入我们</span>
-  </div>
-
-  <div class="subject" id="subject"> 
-    <div class="subject-image">
-      <img src="./assets/subject.svg" alt="subject image"/>
-    </div>
-    <div class="subject-content">
-      <h3>NERVINA LABS</h3>
-      <div id="subject-title"></div>
-      <div id="subject-description"></div>
-    </div>
-  </div>
-
-  
-  <div class="solution" id="solution">
-    <div>解决方案</div>
-  </div>
-
-  <div class="solution1">
-    <div class="solution1-content">
-      <h3 id="solution1-title"></h3>
-      <div id="solution1-description"></div>
-    </div>
-    <div class="solution1-image">
-      <img src="./assets/solution1.svg" alt="solution1 image"/>
-    </div>
-  </div>
-
-  <div class="solution2">
-    <div class="solution2-image">
-      <img src="./assets/solution2.svg" alt="solution2 image" />
-    </div>
-    <div class="solution2-content">
-      <h3 id="solution2-title"></h3>
-      <div id="solution2-description"></div>
-    </div>
-  </div>
-
-  <div class="solution3">
-    <div class="solution3-content">
-      <h3 id="solution3-title"></h3>
-      <div id="solution3-description"></div>
-    </div>
-    <div class="solution3-image">
-      <img src="./assets/solution3.svg" alt="solution3 image" />
-    </div>
-  </div>
-
-  <div class="job" id="job">
-    <h3>加入我们</h3>
-
-    <div id="job1" class="job-item" onclick="toggleJobDetail('job1-detail')">
-      <div id="job1-title"></div>
-      <div>
-        <span class="tag">远程办公</span>
-        <span class="tag">全职</span>
-        <img class="arrow-down" id="job1-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down"/>
+  <body>
+    <div class="header" id="header">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="nervina logo" onclick="gotoTop()" />
+      </div>
+      <div class="menus">
+        <span onclick="gotoElement('solution')">解决方案</span>
+        <span onclick="gotoElement('job')">加入我们</span>
+      </div>
+      <div class="menus-image">
+        <img src="./assets/menus.svg" alt="mobile menus" onclick="openHeaderPanel()" />
       </div>
     </div>
-    <span class="separate"></span>
-    <div class="job-detail close-element" id="job1-detail">
-      <h3 id="job1-name"></h3>
-      <h4>岗位描述：</h4>
-      <span id="job1-responsibilities"></span>
-      <h4>岗位要求：</h4>
-      <span id="job1-qualifications"></span>
-      <h4>加分项：</h4>
-      <span id="job1-preferred-qualifications"></span>
-      <div class="submit">
-        <a class="button" href="mailto:join@nervina.io">申请</a>
-        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job1-detail')"/>
+    <div class="menus-panel close-element" id="menus-panel">
+      <div class="logo-panel">
+        <img class="mobile-logo" src="./assets/logo.svg" alt="nervina logo" onclick="gotoTopAndCloseHeaderPanel()" />
+        <img class="close" src="./assets/close.svg" alt="menus close" onclick="closeHeaderPanel()" />
       </div>
+      <div class="separate"></div>
+      <span onclick="gotoElementAndCloseHeaderPanel('solution')">解决方案</span>
+      <span onclick="gotoElementAndCloseHeaderPanel('job')">加入我们</span>
     </div>
-    
-    <div id="job2" class="job-item" onclick="toggleJobDetail('job2-detail')">
-      <div id="job2-title"></div>
-      <div>
-        <span class="tag">远程办公</span>
-        <span class="tag">全职</span>
-        <img class="arrow-down" id="job2-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down"/>
+
+    <div class="subject" id="subject">
+      <div class="subject-image">
+        <img src="./assets/subject.svg" alt="subject image" />
       </div>
-    </div>
-    <span class="separate"></span>
-    <div class="job-detail close-element" id="job2-detail">
-      <h3 id="job2-name"></h3>
-      <h4>岗位描述：</h4>
-      <span id="job2-responsibilities"></span>
-      <h4>岗位要求：</h4>
-      <span id="job2-qualifications"></span>
-      <div class="submit">
-        <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
-        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job2-detail')" />
+      <div class="subject-content">
+        <h3>NERVINA LABS</h3>
+        <div id="subject-title"></div>
+        <div id="subject-description"></div>
       </div>
     </div>
 
-    <div id="job3" class="job-item" onclick="toggleJobDetail('job3-detail')">
-      <div id="job3-title"></div>
-      <div>
-        <span class="tag">远程办公</span>
-        <span class="tag">全职</span>
-        <img class="arrow-down" id="job3-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
-      </div>
+    <div class="solution" id="solution">
+      <div>解决方案</div>
     </div>
-    <span class="separate"></span>
-    <div class="job-detail close-element" id="job3-detail">
-      <h3 id="job3-name"></h3>
-      <h4>岗位描述：</h4>
-      <span id="job3-responsibilities"></span>
-      <h4>岗位要求：</h4>
-      <span id="job3-qualifications"></span>
-      <div class="submit">
-        <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
-        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job3-detail')" />
+
+    <div class="solution1">
+      <div class="solution1-content">
+        <h3 id="solution1-title"></h3>
+        <div id="solution1-description"></div>
+      </div>
+      <div class="solution1-image">
+        <img src="./assets/solution1.svg" alt="solution1 image" />
       </div>
     </div>
 
-    <div id="job4" class="job-item" onclick="toggleJobDetail('job4-detail')">
-      <div id="job4-title"></div>
-      <div>
-        <span class="tag">远程办公</span>
-        <span class="tag">全职</span>
-        <img class="arrow-down" id="job4-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
+    <div class="solution2">
+      <div class="solution2-image">
+        <img src="./assets/solution2.svg" alt="solution2 image" />
       </div>
-    </div>
-    <span class="separate"></span>
-    <div class="job-detail close-element" id="job4-detail">
-      <h3 id="job4-name"></h3>
-      <h4>岗位描述：</h4>
-      <span id="job4-responsibilities"></span>
-      <h4>岗位要求：</h4>
-      <span id="job4-qualifications"></span>
-      <div class="submit">
-        <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
-        <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job4-detail')" />
+      <div class="solution2-content">
+        <h3 id="solution2-title"></h3>
+        <div id="solution2-description"></div>
       </div>
     </div>
 
-  </div>
-    
-  <div class="footer">
-    <div class="link">
-      <a class="link-item" target="_blank" href="https://nervos.org">Nervos Foundation</a>
-      <span class="link-separate"></span>
-      <a class="link-item" target="_blank" href="https://explorer.nervos.org">CKB Explorer</a>
-      <span class="link-separate"></span>
-      <a class="link-item block" target="_blank" href="https://github.com/nervina-labs/godwoken_explorer"">Godwoken Explorer</a>
-      <span class="link-separate"></span>
-      <a class="link-item" target="_blank" href="https://github.com/nervina-labs">GitHub</a>
+    <div class="solution3">
+      <div class="solution3-content">
+        <h3 id="solution3-title"></h3>
+        <div id="solution3-description"></div>
+      </div>
+      <div class="solution3-image">
+        <img src="./assets/solution3.svg" alt="solution3 image" />
+      </div>
     </div>
-    <a class="record link-item" target="_blank" href="https://beian.miit.gov.cn/">浙ICP备2021006943号-1</a>
-    <div class="copyright" id="copyright"></div>
-  </div>
 
-  <script src="index.js"></script>
-</body>
+    <div class="job" id="job">
+      <h3>加入我们</h3>
 
+      <div id="job1" class="job-item" onclick="toggleJobDetail('job1-detail')">
+        <div id="job1-title"></div>
+        <div>
+          <span class="tag">远程办公</span>
+          <span class="tag">全职</span>
+          <img class="arrow-down" id="job1-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+      <span class="separate"></span>
+      <div class="job-detail close-element" id="job1-detail">
+        <h3 id="job1-name"></h3>
+        <h4>岗位描述：</h4>
+        <span id="job1-responsibilities"></span>
+        <h4>岗位要求：</h4>
+        <span id="job1-qualifications"></span>
+        <h4>加分项：</h4>
+        <span id="job1-preferred-qualifications"></span>
+        <div class="submit">
+          <a class="button" href="mailto:join@nervina.io">申请</a>
+          <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job1-detail')" />
+        </div>
+      </div>
+
+      <div id="job2" class="job-item" onclick="toggleJobDetail('job2-detail')">
+        <div id="job2-title"></div>
+        <div>
+          <span class="tag">远程办公</span>
+          <span class="tag">全职</span>
+          <img class="arrow-down" id="job2-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+      <span class="separate"></span>
+      <div class="job-detail close-element" id="job2-detail">
+        <h3 id="job2-name"></h3>
+        <h4>岗位描述：</h4>
+        <span id="job2-responsibilities"></span>
+        <h4>岗位要求：</h4>
+        <span id="job2-qualifications"></span>
+        <div class="submit">
+          <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
+          <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job2-detail')" />
+        </div>
+      </div>
+
+      <div id="job3" class="job-item" onclick="toggleJobDetail('job3-detail')">
+        <div id="job3-title"></div>
+        <div>
+          <span class="tag">远程办公</span>
+          <span class="tag">全职</span>
+          <img class="arrow-down" id="job3-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+      <span class="separate"></span>
+      <div class="job-detail close-element" id="job3-detail">
+        <h3 id="job3-name"></h3>
+        <h4>岗位描述：</h4>
+        <span id="job3-responsibilities"></span>
+        <h4>岗位要求：</h4>
+        <span id="job3-qualifications"></span>
+        <div class="submit">
+          <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
+          <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job3-detail')" />
+        </div>
+      </div>
+
+      <div id="job4" class="job-item" onclick="toggleJobDetail('job4-detail')">
+        <div id="job4-title"></div>
+        <div>
+          <span class="tag">远程办公</span>
+          <span class="tag">全职</span>
+          <img class="arrow-down" id="job4-detail-arrow" src="./assets/arrow_down.svg" alt="arrow down" />
+        </div>
+      </div>
+      <span class="separate"></span>
+      <div class="job-detail close-element" id="job4-detail">
+        <h3 id="job4-name"></h3>
+        <h4>岗位描述：</h4>
+        <span id="job4-responsibilities"></span>
+        <h4>岗位要求：</h4>
+        <span id="job4-qualifications"></span>
+        <div class="submit">
+          <a class="button" target="_blank" href="mailto:join@nervina.io">申请</a>
+          <img class="arrow-up" src="./assets/arrow_up.svg" alt="arrow up" onclick="closeJobDetail('job4-detail')" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a class="record link-item" target="_blank" href="https://beian.miit.gov.cn/">浙ICP备2021006943号-1</a>
+      <div class="copyright" id="copyright"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
