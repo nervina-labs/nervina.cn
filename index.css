@@ -56,7 +56,7 @@ a {
 .menus {
   display: flex;
   justify-content: space-between;
-  width: 392px;
+  width: 252px;
   height: 100%;
 }
 
@@ -466,7 +466,7 @@ a {
 
 /* production */
 .production {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-end;
   height: 140px;
@@ -496,7 +496,7 @@ a {
 }
 
 .productions {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 70px 50px;
 }
