@@ -3,4 +3,4 @@
   <p>Welcome to Nervina Labs!</p>
 </h1>
 
-This is the repo for the [nervina.io](https://www.nervina.io) website.
+This is the repo for the [nervina.cn](https://www.nervina.cn) website.
