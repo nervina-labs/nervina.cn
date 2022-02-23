@@ -660,8 +660,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
   color: #ffffff;
+  padding-top: 6px;
 }
 
 @media (max-width: 750px) {
