@@ -667,6 +667,7 @@ a {
 @media (max-width: 750px) {
   .footer {
     height: 168px;
+    padding-top: 24px;
   }
 }
 
